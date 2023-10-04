@@ -1,0 +1,28 @@
+﻿<ContentDialog
+    x:Class="PruebaTecnica.Views.ConfirmDeleteDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Confirmar Eliminación"
+    PrimaryButtonText="Sí"
+    SecondaryButtonText="Cancelar"
+    Background="#E0E6E6" Foreground="#4C4C4C">
+
+    <StackPanel>
+        <TextBlock Text="¿Está seguro de que desea eliminar este elemento?" Foreground="#4C4C4C" Margin="10" />
+    </StackPanel>
+
+    <ContentDialog.PrimaryButtonStyle>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#FF6666" />
+            <Setter Property="Foreground" Value="White" />
+        </Style>
+    </ContentDialog.PrimaryButtonStyle>
+
+    <ContentDialog.SecondaryButtonStyle>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#3399CC" />
+            <Setter Property="Foreground" Value="White" />
+        </Style>
+    </ContentDialog.SecondaryButtonStyle>
+</ContentDialog>
+
